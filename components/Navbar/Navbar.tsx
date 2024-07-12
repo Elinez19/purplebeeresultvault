@@ -87,9 +87,11 @@ const Drawerdata = () => {
                             </Link>
                         ))}
                         <div className="mt-4"></div>
-                        <button className="bg-purple w-full text-white border border-lightblue font-medium py-2 px-4 rounded">
-                            Sign In
-                        </button>
+                        <Link href="https://school.pbresultvault.com/login">
+                            <button className="bg-purple w-full text-white border border-lightblue font-medium py-2 px-4 rounded">
+                                Sign In
+                            </button>
+                        </Link>
                         <button className="bg-purple w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">
                             Sign up
                         </button>
@@ -108,7 +110,7 @@ const Navbar = () => {
             <>
                 <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
                     <div className="relative flex h-20 items-center justify-between">
-                        <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
+                        <div className="flex flex-1 items-center justify-between">
                             {/* LOGO */}
                             <div className="flex flex-shrink-0 items-center">
                                 <img
@@ -123,31 +125,33 @@ const Navbar = () => {
                                 />
                             </div>
                             {/* LINKS */}
-                            <div className="hidden lg:block m-auto">
-                                <div className="flex space-x-4">
-                                    {navigation.map((item) => (
-                                        <Link
-                                            key={item.name}
-                                            href={item.href}
-                                            className={classNames(
-                                                item.current ? 'text-black hover:opacity-100' : 'hover:text-black hover:opacity-100',
-                                                'px-3 py-4 text-lg font-normal opacity-75 space-links'
-                                            )}
-                                            aria-current={item.href ? 'page' : undefined}
-                                        >
-                                            {item.name}
-                                        </Link>
-                                    ))}
+                            <div className="hidden lg:flex items-center space-x-4 m-auto">
+                                {navigation.map((item) => (
+                                    <Link
+                                        key={item.name}
+                                        href={item.href}
+                                        className={classNames(
+                                            item.current ? 'text-black hover:opacity-100' : 'hover:text-black hover:opacity-100',
+                                            'px-3 py-4 text-lg font-normal opacity-75 space-links'
+                                        )}
+                                        aria-current={item.href ? 'page' : undefined}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                ))}
+                                {/* CTA BUTTONS */}
+                                <div className="flex items-center space-x-2">
+                                    <Link href="https://school.pbresultvault.com/login">
+                                        <button className="bg-purple text-white font-medium py-2 px-4 rounded">
+                                            Sign In
+                                        </button>
+                                    </Link>
+                                    <Link href="https://school.pbresultvault.com/register">
+                                    <button className="bg-blue text-white font-medium py-2 px-4 rounded">
+                                        Sign Up
+                                    </button>
+                                    </Link>
                                 </div>
-                            </div>
-                            {/* CTA BUTTONS */}
-                            <div className="hidden lg:block ml-4">
-                                <button className="bg-purple text-white font-medium py-2 px-4 rounded mr-2">
-                                    Sign In
-                                </button>
-                                <button className="bg-blue text-white font-medium py-2 px-4 rounded">
-                                    Sign Up
-                                </button>
                             </div>
                         </div>
                         {/* DRAWER FOR MOBILE VIEW */}

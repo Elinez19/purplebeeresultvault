@@ -6,22 +6,22 @@ const Business = () => {
     const listItems = [
         {
             icon: <FaCheckCircle />,
-            text: 'Flexible result format',
+            text: 'Automated Result Generation',
+            subText: 'Streamline result creation with automated processes.'
+        },
+        {
+            icon: <FaCheckCircle />,
+            text: 'Secure Access Controls',
+            subText: 'Ensure data security with password/PIN-based access.'
+        },
+        {
+            icon: <FaCheckCircle />,
+            text: 'Unlimited Result Record Management',
             subText: 'gives your school the best of service in Result Management.'
         },
         {
             icon: <FaCheckCircle />,
-            text: 'Efficient mark calculation',
-            subText: 'gives your school the best of service in Result Management.'
-        },
-        {
-            icon: <FaCheckCircle />,
-            text: 'Quick report card generation',
-            subText: 'gives your school the best of service in Result Management.'
-        },
-        {
-            icon: <FaCheckCircle />,
-            text: 'Data-driven insights',
+            text: 'Flexible and Unlimited Class and Subject Management',
             subText: 'gives your school the best of service in Result Management.'
         },
     ];
@@ -34,8 +34,8 @@ const Business = () => {
                 </div>
 
                 <div className='col-span-6 flex flex-col justify-center'>
-                    <h2 className='text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-143'>
-                        Manage & Push Your School Result To The Next Level
+                    <h2 className='text-black text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-143'>
+                        Effortlessly Manage and Publish Students' results
                     </h2>
                     <h3 className='text-black text-lg font-normal text-center lg:text-start lh-173 opacity-75 pt-3'>
                         Cut down the time taken for exam evaluations, mark calculation, and report card generation by 90% using PbresultVault Management System. PbresultVault gives flexibility and clarity to your school result regardless of the result format.
@@ -53,8 +53,8 @@ const Business = () => {
                         ))}
                     </ul>
 
-                    <Link href={'/'} className="text-electricblue text-lg font-medium flex gap-2 pt-4 mx-auto lg:mx-0">
-                        Learn more <Image src="/images/people/arrow-right.svg" alt="arrow-right" width={24} height={24} />
+                    <Link href={'/'} className="text-electricblue text-lg font-medium flex gap-2 pt-4 mx-auto lg:mx-0 items-center">
+                        Learn more <Image src="/images/people/arrow-right.svg" alt="arrow-right" width={20} height={20} />
                     </Link>
                 </div>
             </div>

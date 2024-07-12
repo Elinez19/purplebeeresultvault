@@ -10,11 +10,11 @@ interface ProductType {
 const products: ProductType[] = [
     {
         id: 1,
-        link: ['Home', 'Popular', 'About', 'Contact'],
+        link: ['About', 'Features', 'Why Pbresultvault', 'Contact'],
     },
     {
         id: 2,
-        link: ['Help', 'Resources', 'Application', 'Team']
+        link: ['Support', 'Resources', 'Guides', 'Tutorials']
     }
 ]
 
@@ -60,15 +60,15 @@ const Footer = () => {
                     <div className='col-span-4 md:col-span-4 lg:col-span-4'>
                         <div className="flex gap-2">
                             <Image src={'/images/Footer/mask.svg'} alt="mask-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">925 Filbert Street Pennsylvania 18072</h5>
+                            <h5 className="text-base font-normal text-offwhite">No 41, Ojido street Beside Ojido market, Ado- Ekiti</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/images/Footer/telephone.svg'} alt="telephone-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">+ 45 34 11 44 11</h5>
+                            <h5 className="text-base font-normal text-offwhite">+2349122205393</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/images/Footer/email.svg'} alt="email-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">info@gmail.com</h5>
+                            <h5 className="text-base font-normal text-offwhite">info@purplebeetech.com</h5>
                         </div>
                     </div>
 

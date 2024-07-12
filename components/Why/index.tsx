@@ -7,8 +7,8 @@ interface whydata {
 
 const whydata: whydata[] = [
     {
-        heading: "Quality",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        heading: "Performance/Promotion Management",
+        subheading: "The Software promotes or changes class, year, or group with one click. Conditions can be applied when promoting students.",
     },
     {
         heading: "Communication",
@@ -39,7 +39,7 @@ const Why = () => {
                 {/* COLUMN-2 */}
                 <div className="flex flex-col justify-center">
                     <h3 className="text-4xl lg:text-5xl font-semibold sm:leading-tight mt-5 text-center lg:text-left">
-                        Why we are the best?
+                        Why Pbresultvault?
                     </h3>
                     <h4 className="text-lg lg:text-xl font-normal sm:leading-tight text-center lg:text-left text-beach mt-4">
                         Don’t waste time on manual tasks. Let Automation do it for you. Simplify workflows, reduce errors, and save time.
