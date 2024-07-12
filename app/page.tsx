@@ -16,7 +16,7 @@ const Home = () => {
       <Features/>
       <Provide/>
       <Why/>
-      <Newsletter/>
+      {/* <Newsletter/> */}
     </>
   )
 }

@@ -20,14 +20,14 @@ const products: ProductType[] = [
 
 const Footer = () => {
     return (
-        <div className="bg-[#4F0166] -mt-40">
-            <div className="mx-auto max-w-2xl pt-48 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="bg-[#4F0166]">
+            <div className="mx-auto max-w-2xl pt-8 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="my-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
-                        <img src={'/images/Footer/logo.svg'} alt="logo" className='pb-8' />
+                        <img src={'/images/pbresult-logo.png'} alt="logo" className='pb-8' />
                         <div className='flex gap-4'>
                             <Link href="https://facebook.com" className='Footer-fb-icons'>
                                 <Image src={'/images/Footer/facebook.svg'} alt="facebook" width={15} height={20} />
@@ -77,7 +77,7 @@ const Footer = () => {
                 {/* All Rights Reserved */}
 
                 <div className='py-10 lg:flex items-center justify-between border-t border-t-bordertop'>
-                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>@2023 Agency. All Rights Reserved by <Link href="https://adminmart.com/" target="_blank"> Adminmart.com</Link></h4>
+                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>2024 Pbresultvault. All Rights Reserved by <Link href="https://purplebeetech.com" target="_blank"> Pbresultvault.com</Link></h4>
                     <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
                         <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Privacy policy</Link></h4>
                         <div className="h-5 bg-bordertop w-0.5"></div>
