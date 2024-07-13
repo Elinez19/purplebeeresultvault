@@ -11,12 +11,12 @@ const whydata: whydata[] = [
         subheading: "The Software promotes or changes class, year, or group with one click. Conditions can be applied when promoting students.",
     },
     {
-        heading: "Communication",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        heading: "Reduced Workload and Increased Efficiency",
+        subheading: "Pbresultvault automates result management, allowing teachers to add subject or class-wise student results efficiently, saving time and reducing workload.",
     },
     {
-        heading: "Reliability",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        heading: "Seamless Students Records Entry",
+        subheading: "Pbresultvault provides a user- friendly interface for teachers to easily add and manage marks, enhancing accuracy and efficiency in the grading process.",
     }
 ]
 
