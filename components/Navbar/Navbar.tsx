@@ -3,6 +3,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import React from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
+import fileDownload from 'react-file-download';
 
 interface NavigationItem {
     name: string;
@@ -15,7 +16,6 @@ const navigation: NavigationItem[] = [
     { name: 'Features', href: '#services', current: false },
     { name: 'Why Pbresult', href: '#about', current: false },
     { name: 'Contact', href: '#project', current: false },
-    { name: 'Support', href: '/', current: false },
 ];
 
 const drawerNavigation: NavigationItem[] = [
@@ -23,7 +23,6 @@ const drawerNavigation: NavigationItem[] = [
     { name: 'Features', href: '#services', current: false },
     { name: 'Why Pbresult', href: '#about', current: false },
     { name: 'Contact', href: '#project', current: false },
-    { name: 'Support', href: '/', current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -92,7 +91,7 @@ const Drawerdata = () => {
                                 Sign In
                             </button>
                         </Link>
-                        <button className="bg-purple w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">
+                        <button className="bg-purple w-full hover:bg-[#218F6A] hover:text-white text-white font-medium my-2 py-2 px-4 rounded">
                             Sign up
                         </button>
                     </div>
@@ -104,6 +103,10 @@ const Drawerdata = () => {
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
+
+    const handleDownload = () => {
+        fileDownload('/images/manual.pdf', 'manual.pdf'); // Update with the actual path to your file and the file name
+    };
 
     return (
         <Disclosure as="nav" className="navbar">
@@ -125,7 +128,7 @@ const Navbar = () => {
                                 />
                             </div>
                             {/* LINKS */}
-                            <div className="hidden lg:flex items-center space-x-4 m-auto">
+                            <div className="hidden lg:flex items-center space-x-4 m-auto whitespace-nowrap">
                                 {navigation.map((item) => (
                                     <Link
                                         key={item.name}
@@ -147,10 +150,16 @@ const Navbar = () => {
                                         </button>
                                     </Link>
                                     <Link href="https://school.pbresultvault.com/register">
-                                    <button className="bg-blue text-white font-medium py-2 px-4 rounded">
-                                        Sign Up
-                                    </button>
+                                        <button className="bg-[#218F6A] text-white font-medium py-2 px-4 rounded">
+                                            Sign Up
+                                        </button>
                                     </Link>
+                                    <button
+                                        onClick={handleDownload}
+                                        className="bg-purple text-white font-medium py-2 px-4 rounded"
+                                    >
+                                        Download Manual
+                                    </button>
                                 </div>
                             </div>
                         </div>
