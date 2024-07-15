@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import fileDownload from 'react-file-download';
+import Image from 'next/image';
 
 interface NavigationItem {
     name: string;
@@ -45,10 +46,12 @@ const Drawer = ({ children, isOpen, setIsOpen }: { children: React.ReactNode, is
             >
                 <article className="relative w-270 max-w-lg pb-10 flex flex-col space-y-6 h-full">
                     <header className="p-4 flex items-center justify-between">
-                        <img
+                        <Image
                             className="h-12 w-40"
                             src={'/images/pbresult-logo.png'}
                             alt="Courses-Logo"
+                            height={12}
+                            width={40}
                             onClick={() => setIsOpen(false)}
                         />
                         <XMarkIcon className="block h-6 w-6" onClick={() => setIsOpen(false)} />
@@ -116,14 +119,18 @@ const Navbar = () => {
                         <div className="flex flex-1 items-center justify-between">
                             {/* LOGO */}
                             <div className="flex flex-shrink-0 items-center">
-                                <img
+                                <Image
                                     className="block h-12 w-40 lg:hidden"
                                     src={'/images/pbresult-logo.png'}
+                                    height={12}
+                                    width={40}
                                     alt="pbresult-logo"
                                 />
-                                <img
+                                <Image
                                     className="hidden h-full w-full lg:block"
                                     src={'/images/pbresult-logo.png'}
+                                    height={100}
+                                    width={100}
                                     alt="pbresult-logo"
                                 />
                             </div>
