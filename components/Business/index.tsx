@@ -35,7 +35,7 @@ const Business = () => {
 
                 <div className='col-span-6 flex flex-col justify-center'>
                     <h2 className='text-black text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-143'>
-                        Effortlessly Manage and Publish Students' results
+                        Effortlessly Manage and Publish Students&#39; results
                     </h2>
                     <h3 className='text-black text-lg font-normal text-center lg:text-start lh-173 opacity-75 pt-3'>
                         Cut down the time taken for exam evaluations, mark calculation, and report card generation by 90% using PbresultVault Management System. PbresultVault gives flexibility and clarity to your school result regardless of the result format.
