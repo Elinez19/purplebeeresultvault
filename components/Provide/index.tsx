@@ -25,10 +25,10 @@ const Provide = () => {
                     <div className='flex justify-center items-center'>
                         <div className="flex flex-col align-middle justify-center w-full h-full p-4">
                             <p className="text-4xl lg:text-5xl font-semibold mt-5 text-center lg:text-start">
-                                We provide that service.
+                            Streamlined Administrative Tasks with Pbresultvault
                             </p>
                             <h4 className="text-lg lg:text-xl pt-4 font-normal text-center lg:text-start text-bluegray">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+                            Pbresultvault automates result compilation and record-keeping tasks, providing a seamless, digital platform that streamlines administrative processes, allowing schools to operate more efficiently.
                             </h4>
                             <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0">
                                 Learn more <img src={'/images/provide/arrow.svg'} alt={'arrow'} width={20} height={20} />
