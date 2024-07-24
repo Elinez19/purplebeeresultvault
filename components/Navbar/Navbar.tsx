@@ -151,14 +151,19 @@ const Navbar = () => {
                                 ))}
                                 {/* CTA BUTTONS */}
                                 <div className="flex items-center space-x-2">
-                                    <Link href="https://school.pbresultvault.com/login">
+                                    <Link href="https://ekschool.pbresultvault.com/">
                                         <button className="bg-purple text-white font-medium py-2 px-4 rounded">
-                                            Sign In
+                                            School Login
                                         </button>
                                     </Link>
-                                    <Link href="https://school.pbresultvault.com/register">
+                                    <Link href="https://ekteacher.pbresultvault.com/login">
                                         <button className="bg-[#218F6A] text-white font-medium py-2 px-4 rounded">
-                                            Sign Up
+                                            Teacher Login
+                                        </button>
+                                    </Link>
+                                    <Link href="https://ekstudent.pbresultvault.com/login">
+                                        <button className="bg-[#218F6A] text-white font-medium py-2 px-4 rounded">
+                                            Student Login
                                         </button>
                                     </Link>
                                     <button
