@@ -162,7 +162,7 @@ const Navbar = () => {
                                         </button>
                                     </Link>
                                     <Link href="https://ekstudent.pbresultvault.com/login">
-                                        <button className="bg-[#218F6A] text-white font-medium py-2 px-4 rounded">
+                                        <button className="bg-purple text-white font-medium py-2 px-4 rounded">
                                             Student Login
                                         </button>
                                     </Link>
