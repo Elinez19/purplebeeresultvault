@@ -170,7 +170,7 @@ const Navbar = () => {
                                         onClick={handleDownload}
                                         className="bg-purple text-white font-medium py-2 px-4 rounded"
                                     >
-                                        Download Manual
+                                        Get Manual
                                     </button>
                                 </div>
                             </div>
