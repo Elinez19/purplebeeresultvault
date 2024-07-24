@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import ReactPlayer from 'react-player';
+import Image from 'next/image';
 
 const Provide = () => {
     return (
@@ -31,7 +32,7 @@ const Provide = () => {
                             Pbresultvault automates result compilation and record-keeping tasks, providing a seamless, digital platform that streamlines administrative processes, allowing schools to operate more efficiently.
                             </h4>
                             <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0">
-                                Learn more <img src={'/images/provide/arrow.svg'} alt={'arrow'} width={20} height={20} />
+                                Learn more <Image src={'/images/provide/arrow.svg'} alt={'arrow'} width={20} height={20} />
                             </Link>
                         </div>
                     </div>

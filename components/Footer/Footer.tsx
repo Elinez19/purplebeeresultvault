@@ -27,7 +27,7 @@ const Footer = () => {
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
-                        <img src={'/images/pbresult-logo.png'} alt="logo" className='pb-8' />
+                        <Image src={'/images/pbresult-logo.png'} alt="logo" className='pb-8' />
                         <div className='flex gap-4'>
                             <Link href="https://facebook.com" className='Footer-fb-icons'>
                                 <Image src={'/images/footer/facebook.svg'} alt="facebook" width={15} height={20} />

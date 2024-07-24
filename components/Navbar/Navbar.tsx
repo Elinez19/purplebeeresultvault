@@ -108,7 +108,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     const handleDownload = () => {
-        fileDownload('/images/manual.pdf', 'manual.pdf'); // Update with the actual path to your file and the file name
+        fileDownload('/images/manual.pdf', 'manual.pdf'); 
     };
 
     return (
