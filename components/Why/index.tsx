@@ -28,7 +28,7 @@ const Why = () => {
                 {/* COLUMN-1 */}
                 <div className="flex justify-center lg:justify-end">
                     <Image
-                        src="/images/School-Admin-Add-Teacher.jpg"
+                        src="/School-Admin-Add-Teacher.jpg"
                         alt="iPad-image"
                         width={4000}
                         height={900}
@@ -49,7 +49,7 @@ const Why = () => {
                         {whydata.map((items, i) => (
                             <div className="flex items-start" key={i}>
                                 <div className="rounded-full h-12 w-12 flex items-center justify-center bg-circlebg">
-                                    <Image src="/images/why/check.svg" alt="check-image" width={24} height={24} />
+                                    <Image src="/why/check.svg" alt="check-image" width={24} height={24} />
                                 </div>
                                 <div className="ml-5">
                                     <h4 className="text-2xl font-semibold">{items.heading}</h4>

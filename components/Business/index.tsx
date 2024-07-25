@@ -30,7 +30,7 @@ const Business = () => {
         <div className="mx-auto max-w-7xl pt-20 sm:pb-24 px-6">
             <div className='grid grid-cols-1 lg:grid-cols-12 gap-6'>
                 <div className='col-span-6 flex justify-center order-last lg:order-first'>
-                    <Image src="/images/School-Admin-Add-Teacher.jpg" alt="business" width={1000} height={805} />
+                    <Image src="/School-Admin-Add-Teacher.jpg" alt="business" width={1000} height={805} />
                 </div>
 
                 <div className='col-span-6 flex flex-col justify-center'>
@@ -54,7 +54,7 @@ const Business = () => {
                     </ul>
 
                     <Link href={'/'} className="text-electricblue text-lg font-medium flex gap-2 pt-4 mx-auto lg:mx-0 items-center">
-                        Learn more <Image src="/images/people/arrow-right.svg" alt="arrow-right" width={20} height={20} />
+                        Learn more <Image src="/people/arrow-right.svg" alt="arrow-right" width={20} height={20} />
                     </Link>
                 </div>
             </div>

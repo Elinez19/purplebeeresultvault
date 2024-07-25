@@ -6,7 +6,7 @@ const sectionData = [
     {
         title: 'Manage & Push Your School Result To The Next Level',
         description: 'Cut down the time taken for exam evaluations, mark calculation, and report card generation by 90% using PbresultVault Management System. PbresultVault gives flexibility and clarity to your school result regardless of the result format.',
-        imgSrc: '/images/School-Admin-Add-Teacher.jpg',
+        imgSrc: '/School-Admin-Add-Teacher.jpg',
     },
 ];
 

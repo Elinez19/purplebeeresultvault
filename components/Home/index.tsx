@@ -35,7 +35,7 @@ const Home = () => {
                         </Fade>
                     </div>
                     <div className='col-span-12 lg:col-span-6 flex justify-center mt-10 lg:mt-0'>
-                        <Image src="/images/School-Admin.jpg" alt="School Admin" width={1000} height={805} />
+                        <Image src="/School-Admin.jpg" alt="School Admin" width={1000} height={805} />
                     </div>
                 </div>
             </div>

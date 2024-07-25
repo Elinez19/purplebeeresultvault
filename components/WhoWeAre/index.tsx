@@ -9,17 +9,17 @@ interface datatype {
 
 const Aboutdata: datatype[] = [
     {
-        imgSrc: "/images/icon.svg",
+        imgSrc: "/icon.svg",
         heading: "Seamless Students Records Entry:",
         paragraph: 'Pbresult provides a user- friendly interface for teachers to easily add and manage marks, enhancing accuracy and efficiency in the grading process.',
     },
     {
-        imgSrc: "/images/features/signal.svg",
+        imgSrc: "/features/signal.svg",
         heading: "Enhanced Record-Keeping",
         paragraph: 'Pbresult offers a secure digital repository, simplifying record-keeping and ensuring easy access to comprehensive archives for compliance and analysis.',
     },
     {
-        imgSrc: "/images/features/dollar.svg",
+        imgSrc: "/features/dollar.svg",
         heading: "Automated Performance Analysis",
         paragraph: 'Pbresultvault provides automated performance analysis, allowing teachers to gain insights into student progress quickly and make informed decisions to support individual learning needs',
     }
