@@ -29,14 +29,14 @@ const Footer = () => {
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
                         <Image src={'/pbresult-logo.png'} alt="logo" className='pb-8' />
                         <div className='flex gap-4'>
-                            <Link href="https://facebook.com" className='Footer-fb-icons'>
-                                <Image src={'/footer/facebook.svg'} alt="facebook" width={15} height={20} />
+                            <Link href="https://facebook.com" className='fb-icons'>
+                                <Image src={'/facebook.svg'} alt="facebook" width={15} height={20} />
                             </Link>
-                            <Link href="https://twitter.com" className='Footer-icons'>
-                                <Image src={'/footer/twitter.svg'} alt="twitter" width={20} height={20} />
+                            <Link href="https://twitter.com" className='icons'>
+                                <Image src={'/twitter.svg'} alt="twitter" width={20} height={20} />
                             </Link>
-                            <Link href="https://instagram.com" className='Footer-icons'>
-                                <Image src={'/footer/instagram.svg'} alt="instagram" width={20} height={20} />
+                            <Link href="https://instagram.com" className='icons'>
+                                <Image src={'/instagram.svg'} alt="instagram" width={20} height={20} />
                             </Link> 
                         </div>
                     </div>
@@ -59,15 +59,15 @@ const Footer = () => {
 
                     <div className='col-span-4 md:col-span-4 lg:col-span-4'>
                         <div className="flex gap-2">
-                            <Image src={'/footer/mask.svg'} alt="mask-icon" width={24} height={24} />
+                            <Image src={'/mask.svg'} alt="mask-icon" width={24} height={24} />
                             <h5 className="text-base font-normal text-offwhite">No 41, Ojido street Beside Ojido market, Ado- Ekiti</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
-                            <Image src={'/footer/telephone.svg'} alt="telephone-icon" width={24} height={24} />
+                            <Image src={'/telephone.svg'} alt="telephone-icon" width={24} height={24} />
                             <h5 className="text-base font-normal text-offwhite">+2349122205393</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
-                            <Image src={'/footer/email.svg'} alt="email-icon" width={24} height={24} />
+                            <Image src={'/email.svg'} alt="email-icon" width={24} height={24} />
                             <h5 className="text-base font-normal text-offwhite">info@purplebeetech.com</h5>
                         </div>
                     </div>
