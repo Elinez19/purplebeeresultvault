@@ -49,7 +49,7 @@ const Why = () => {
                         {whydata.map((items, i) => (
                             <div className="flex items-start" key={i}>
                                 <div className="rounded-full h-12 w-12 flex items-center justify-center bg-circlebg">
-                                    <Image src="/why/check.svg" alt="check-image" width={24} height={24} />
+                                    <Image src="/check.svg" alt="check-image" width={24} height={24} />
                                 </div>
                                 <div className="ml-5">
                                     <h4 className="text-2xl font-semibold">{items.heading}</h4>

@@ -54,7 +54,7 @@ const Business = () => {
                     </ul>
 
                     <Link href={'/'} className="text-electricblue text-lg font-medium flex gap-2 pt-4 mx-auto lg:mx-0 items-center">
-                        Learn more <Image src="/people/arrow-right.svg" alt="arrow-right" width={20} height={20} />
+                        Learn more <Image src="/arrow-right.svg" alt="arrow-right" width={20} height={20} />
                     </Link>
                 </div>
             </div>
