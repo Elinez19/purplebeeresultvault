@@ -48,7 +48,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: { children: React.ReactNode, is
                     <header className="p-4 flex items-center justify-between">
                         <Image
                             className="h-12 w-40"
-                            src={'/images/pbresult-logo.png'}
+                            src={'/pbresult-logo.png'}
                             alt="Courses-Logo"
                             height={12}
                             width={40}
@@ -108,7 +108,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     const handleDownload = () => {
-        fileDownload('/images/manual.pdf', 'manual.pdf'); 
+        fileDownload('/manual.pdf', 'manual.pdf'); 
     };
 
     return (
@@ -121,14 +121,14 @@ const Navbar = () => {
                             <div className="flex flex-shrink-0 items-center">
                                 <Image
                                     className="block h-12 w-40 lg:hidden"
-                                    src={'/images/pbresult-logo.png'}
+                                    src={'/pbresult-logo.png'}
                                     height={12}
                                     width={40}
                                     alt="pbresult-logo"
                                 />
                                 <Image
                                     className="hidden h-full w-full lg:block"
-                                    src={'/images/pbresult-logo.png'}
+                                    src={'/pbresult-logo.png'}
                                     height={100}
                                     width={100}
                                     alt="pbresult-logo"
