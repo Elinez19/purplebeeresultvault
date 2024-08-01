@@ -1,7 +1,7 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import fileDownload from 'react-file-download';
 import Image from 'next/image';
@@ -13,17 +13,17 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'About', href: '/', current: true },
-    { name: 'Features', href: '#services', current: false },
-    { name: 'Why Pbresult', href: '#about', current: false },
-    { name: 'Contact', href: '#project', current: false },
+    { name: 'About Us', href: '/', current: true },
+    { name: 'Features', href: '#Features', current: false },
+    { name: 'Why Pbresult', href: '#Why Pbresult', current: false },
+    { name: 'Contact Us', href: '#Contact', current: false },
 ];
 
 const drawerNavigation: NavigationItem[] = [
-    { name: 'About', href: '/', current: true },
-    { name: 'Features', href: '#services', current: false },
-    { name: 'Why Pbresult', href: '#about', current: false },
-    { name: 'Contact', href: '#project', current: false },
+    { name: 'About Us', href: '/', current: true },
+    { name: 'Features', href: '#Features', current: false },
+    { name: 'Why Pbresult', href: '#Why Pbresult', current: false },
+    { name: 'Contact Us', href: '#Contact', current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -89,14 +89,21 @@ const Drawerdata = () => {
                             </Link>
                         ))}
                         <div className="mt-4"></div>
-                        <Link href="https://school.pbresultvault.com/login">
-                            <button className="bg-purple w-full text-white border border-lightblue font-medium py-2 px-4 rounded">
-                                Sign In
+                        <Link href="https://ekschool.pbresultvault.com/">
+                            <button className="bg-purple text-white font-medium py-2 px-4 rounded w-full sm:w-auto">
+                                School Login
                             </button>
                         </Link>
-                        <button className="bg-purple w-full hover:bg-[#218F6A] hover:text-white text-white font-medium my-2 py-2 px-4 rounded">
-                            Sign up
-                        </button>
+                        <Link href="https://ekteacher.pbresultvault.com/login">
+                            <button className="bg-[#218F6A] text-white font-medium py-2 px-4 rounded w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2">
+                                Teacher Login
+                            </button>
+                        </Link>
+                        <Link href="https://ekstudent.pbresultvault.com/login">
+                            <button className="bg-purple text-white font-medium py-2 px-4 rounded w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2">
+                                Student Login
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -105,7 +112,7 @@ const Drawerdata = () => {
 }
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = React.useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleDownload = () => {
         fileDownload('/manual.pdf', 'manual.pdf'); 
@@ -152,26 +159,26 @@ const Navbar = () => {
                                 {/* CTA BUTTONS */}
                                 <div className="flex items-center space-x-2">
                                     <Link href="https://ekschool.pbresultvault.com/">
-                                        <button className="bg-purple text-white font-medium py-2 px-4 rounded">
+                                        <button className="bg-purple text-white font-medium py-2 px-4 rounded w-full sm:w-auto">
                                             School Login
                                         </button>
                                     </Link>
                                     <Link href="https://ekteacher.pbresultvault.com/login">
-                                        <button className="bg-[#218F6A] text-white font-medium py-2 px-4 rounded">
+                                        <button className="bg-[#218F6A] text-white font-medium py-2 px-4 rounded w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2">
                                             Teacher Login
                                         </button>
                                     </Link>
-                                    <Link href="https://ekstudent.pbresultvault.com/login">
-                                        <button className="bg-purple text-white font-medium py-2 px-4 rounded">
+                                    {/* <Link href="https://ekstudent.pbresultvault.com/login">
+                                        <button className="bg-purple text-white font-medium py-2 px-4 rounded w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2">
                                             Student Login
                                         </button>
                                     </Link>
                                     <button
                                         onClick={handleDownload}
-                                        className="bg-purple text-white font-medium py-2 px-4 rounded"
+                                        className="bg-purple text-white font-medium py-2 px-4 rounded w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2"
                                     >
                                         Get Manual
-                                    </button>
+                                    </button> */}
                                 </div>
                             </div>
                         </div>

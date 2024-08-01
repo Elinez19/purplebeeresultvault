@@ -22,7 +22,7 @@ const whydata: whydata[] = [
 
 const Why = () => {
     return (
-        <div id="about" className="mx-auto max-w-7xl px-4 my-20 sm:py-20 lg:px-8">
+        <div id="Features" className="mx-auto max-w-7xl px-4 my-20 sm:py-20 lg:px-8">
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
 
                 {/* COLUMN-1 */}
