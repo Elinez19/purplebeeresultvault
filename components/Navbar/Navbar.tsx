@@ -15,15 +15,15 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
     { name: 'About Us', href: '/', current: true },
     { name: 'Features', href: '#Features', current: false },
-    { name: 'Why Pbresult', href: '#Why Pbresult', current: false },
-    { name: 'Contact Us', href: '#Contact', current: false },
+    { name: 'Benefits', href: '#Benefits', current: false },
+    { name: 'How it Works', href: '#HowItWorks', current: false },
 ];
 
 const drawerNavigation: NavigationItem[] = [
     { name: 'About Us', href: '/', current: true },
     { name: 'Features', href: '#Features', current: false },
-    { name: 'Why Pbresult', href: '#Why Pbresult', current: false },
-    { name: 'Contact Us', href: '#Contact', current: false },
+    { name: 'Benefits', href: '#Benefits', current: false },
+    { name: 'How it Works', href: '#HowItWorks', current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -34,13 +34,13 @@ const Drawer = ({ children, isOpen, setIsOpen }: { children: React.ReactNode, is
     return (
         <main
             className={
-                "fixed overflow-hidden z-10 bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out " +
+                "fixed overflow-hidden  bg-opacity-25 inset-0 transform ease-in-out " +
                 (isOpen ? "transition-opacity opacity-100 duration-500 translate-x-0" : "transition-all delay-500 opacity-0 -translate-x-full")
             }
         >
             <section
                 className={
-                    "w-340px max-w-lg left-0 absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform " +
+                    "w-340px max-w-lg left-0 absolute bg-white h-full  delay-400 duration-500 ease-in-out transition-all transform " +
                     (isOpen ? "translate-x-0" : "-translate-x-full")
                 }
             >
@@ -71,7 +71,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: { children: React.ReactNode, is
 
 const Drawerdata = () => {
     return (
-        <div className="rounded-md max-w-sm w-full mx-auto">
+        <div className="max-w-sm w-full mx-auto">
             <div className="flex-1 space-y-4 py-1">
                 <div className="sm:block">
                     <div className="space-y-1 px-5 pt-2 pb-3">
@@ -119,7 +119,7 @@ const Navbar = () => {
     };
 
     return (
-        <Disclosure as="nav" className="navbar">
+        <Disclosure as="nav" className="relative"> {/* Removed the sticky effect here */}
             <>
                 <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
                     <div className="relative flex h-20 items-center justify-between">
@@ -128,16 +128,16 @@ const Navbar = () => {
                             <div className="flex flex-shrink-0 items-center">
                                 <Image
                                     className="block h-12 w-40 lg:hidden"
-                                    src={'/pbresult-logo.png'}
+                                    src={'/ekiti-logo.jpg'}
                                     height={12}
                                     width={40}
                                     alt="pbresult-logo"
                                 />
                                 <Image
-                                    className="hidden h-full w-full lg:block"
-                                    src={'/pbresult-logo.png'}
-                                    height={100}
-                                    width={100}
+                                    className="hidden h-30 w-40 lg:block"
+                                    src={'/ekiti-logo.jpg'}
+                                    height={30}
+                                    width={30}
                                     alt="pbresult-logo"
                                 />
                             </div>
@@ -159,26 +159,15 @@ const Navbar = () => {
                                 {/* CTA BUTTONS */}
                                 <div className="flex items-center space-x-2">
                                     <Link href="https://ekschool.pbresultvault.com/">
-                                        <button className="bg-purple text-white font-medium py-2 px-4 rounded w-full sm:w-auto">
+                                        <button className="border-[#79b297] font-medium py-2 px-4 rounded w-full sm:w-auto text-[#00733d] bg-white border-2">
                                             School Login
                                         </button>
                                     </Link>
                                     <Link href="https://ekteacher.pbresultvault.com/login">
-                                        <button className="bg-[#218F6A] text-white font-medium py-2 px-4 rounded w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2">
+                                        <button className="bg-[#00733d] text-white font-medium py-2 px-4 rounded w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2">
                                             Teacher Login
                                         </button>
                                     </Link>
-                                    {/* <Link href="https://ekstudent.pbresultvault.com/login">
-                                        <button className="bg-purple text-white font-medium py-2 px-4 rounded w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2">
-                                            Student Login
-                                        </button>
-                                    </Link>
-                                    <button
-                                        onClick={handleDownload}
-                                        className="bg-purple text-white font-medium py-2 px-4 rounded w-full sm:w-auto mt-2 sm:mt-0 sm:ml-2"
-                                    >
-                                        Get Manual
-                                    </button> */}
                                 </div>
                             </div>
                         </div>

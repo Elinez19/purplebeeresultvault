@@ -9,43 +9,45 @@ interface DataType {
 
 const aboutData: DataType[] = [
     {
-        icon: <FaUserEdit size={55} color="purple" />,
-        heading: "Seamless Students Records Entry",
-        paragraph: 'Pbresult provides a user-friendly interface for teachers to easily add and manage marks, enhancing accuracy and efficiency in the grading process.',
+        icon: <FaUserEdit size={55} color="orange" />,
+        heading: "Real-Time Results",
+        paragraph: 'Schools upload and update results in real-time, allowing instant access to records.',
     },
     {
-        icon: <FaFileArchive size={55} color="purple" />,
-        heading: "Enhanced Record-Keeping",
-        paragraph: 'Pbresult offers a secure digital repository, simplifying record-keeping and ensuring easy access to comprehensive archives for compliance and analysis.',
+        icon: <FaFileArchive size={55} color="orange" />,
+        heading: "Secure Data Storage",
+        paragraph: 'All data is protected by state-of-the-art encryption, ensuring privacy and security.',
     },
     {
-        icon: <FaChartLine size={55} color="purple" />,
-        heading: "Automated Performance Analysis",
-        paragraph: 'Pbresultvault provides automated performance analysis, allowing teachers to gain insights into student progress quickly and make informed decisions to support individual learning needs.',
+        icon: <FaChartLine size={55} color="orange" />,
+        heading: "Analytics Dashboard",
+        paragraph: 'Government officials can view detailed reports on school performance across the state.',
     },
 ];
 
 const WhoWeAre = () => {
     return (
-        <div className="bg-white/50" id="WhoWeAre">
+        <div className="bg-white/50" id="AboutUs">
             <div className="mx-auto max-w-2xl py-20 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <h3 className="text-4xl sm:text-5xl font-semibold text-black text-center my-10">Why PbresultVault</h3>
-                <h5 className="text-black opacity-60 text-lg font-normal text-center">
-                    Pbresultvault Management streamlines result management, eliminating tedious
-                    <br /> 
-                    manual processes and providing a secure digital result record.
-                </h5>
+                {/* Updated h3 and h5 text alignment */}
+                <div className="flex justify-between items-center mb-10">
+                    <h3 className="text-4xl sm:text-5xl font-semibold text-black text-left w-1/2">
+                        About the Ekiti State Result Management System
+                    </h3>
+                    <h5 className="text-black opacity-60 text-lg font-normal text-left w-1/2">
+                        The Ekiti State Result Management System is a centralized platform designed to streamline result compilation, grading, and distribution across secondary schools in Ekiti State. With this system, schools can manage academic records with ease, providing quick access to performance reports for students, parents, and government officials.
+                    </h5>
+                </div>
+
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 mt-10'>
                     {aboutData.map((item, i) => (
-                        <div key={i} className='bg-white rounded-2xl p-5 shadow-lg border border-white/75'>
-                            <div className="mb-2 flex justify-center">
+                        <div key={i} className='bg-[#f3ebdd] rounded-sm p-5  border border-white/75'>
+                            <div className="flex items-start mb-5"> {/* Icon centered */}
                                 {item.icon}
                             </div>
-                            <h3 className="text-2xl font-semibold text-black mt-5">{item.heading}</h3>
-                            <h4 className='text-lg font-normal text-black opacity-50 my-2'>{item.paragraph}</h4>
-                            <Link href={'/'} className="text-white bg-purple hover:bg-purple transition-all text-xl font-medium py-2 px-4 rounded mt-4 inline-block text-center">
-                                Learn more
-                            </Link>
+                            {/* Title moved below the icon */}
+                            <h3 className="text-2xl font-bold text-black text-left mt-2">{item.heading}</h3>
+                            <h4 className='text-lg font-normal text-black opacity-50 mt-4'>{item.paragraph}</h4>
                         </div>
                     ))}
                 </div>
@@ -55,3 +57,5 @@ const WhoWeAre = () => {
 }
 
 export default WhoWeAre;
+
+

@@ -1,75 +1,86 @@
 "use client"
-import Image from 'next/image';
 import Link from 'next/link';
-import { FaCheckCircle } from 'react-icons/fa';
-import { Fade } from 'react-awesome-reveal';
+import fileDownload from 'js-file-download'; // Import the file download utility
+import { useState } from 'react';
 
-const sectionData = [
-    {
-        title: 'Comprehensive User Roles (Admin, Teacher, Student)',
-        description: 'PbresultVault gives flexibility and clarity to your school result regardless of the result format.',
-        imgSrc: '/School-Admin-2.jpg',
-    },
-];
-
-const listItems = [
-    {
-        icon: <FaCheckCircle color="purple" />,
-        text: 'Different User Roles',
-        subText: 'Different user roles provide varying levels of access and functionality tailored to administrative staff, educators, and students.'
-    },
-    {
-        icon: <FaCheckCircle color="purple" />,
-        text: 'Detailed Analytics and Insights',
-        subText: 'Gain actionable insights into academic performance analytics.'
-    },
-];
-
-const Features = () => {
-    return (
-        <div className="mx-auto max-w-7xl pt-20 sm:pb-24 px-6" id='Features'>
-            {sectionData.map((section, idx) => (
-                <div className='grid grid-cols-1 lg:grid-cols-12 gap-6' key={idx}>
-                    <div className='col-span-12 lg:col-span-6 flex justify-center order-last lg:order-first'>
-                        <Fade direction='left' delay={400} triggerOnce>
-                            <Image src={section.imgSrc} alt="Features" width={1000} height={805} />
-                        </Fade>
-                    </div>
-
-                    <div className='col-span-12 lg:col-span-6 flex flex-col justify-center'>
-                        <Fade direction='up' delay={400} cascade damping={0.1} triggerOnce>
-                            <h2 className='text-black text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-143'>
-                                {section.title}
-                            </h2>
-                            <h3 className='text-black text-lg font-normal text-center lg:text-start lh-173 opacity-75 pt-3'>
-                                {section.description}
-                            </h3>
-                        </Fade>
-
-                        <Fade direction='up' delay={600} cascade damping={0.1} triggerOnce>
-                            <ul className='pt-4 space-y-2'>
-                                {listItems.map((item, index) => (
-                                    <li key={index} className='text-lg font-normal text-black opacity-75'>
-                                        <div className='flex items-center'>
-                                            <span className="mr-2">{item.icon}</span>
-                                            {item.text}
-                                        </div>
-                                        <p className='ml-8 text-base opacity-60'>{item.subText}</p>
-                                    </li>
-                                ))}
-                            </ul>
-                        </Fade>
-
-                        <Fade direction='up' delay={800} triggerOnce>
-                            <Link href={'/'} className="text-electricblue text-lg font-medium flex gap-2 pt-4 mx-auto lg:mx-0 items-center">
-                                Learn more <Image src="/arrow-right.svg" alt="arrow-right" width={20} height={20} />
-                            </Link>
-                        </Fade>
-                    </div>
-                </div>
-            ))}
-        </div>
-    );
+interface CardData {
+    title: string;
+    paragraph: string;
+    cta1: string;
+    cta2: string;
+    link1: string;
+    link2: string; // This will now represent the path to the PDF file
 }
 
-export default Features;
+const cardData: CardData[] = [
+    {
+        title: "School Admin Software",
+        paragraph: "A guide to setting up your school profile, managing accounts, and overseeing student records.",
+        cta1: "Admin Login",
+        cta2: "Download Admin Manual",
+        link1: "https://ekschool.pbresultvault.com/",
+        link2: "/admin-manual.pdf", // PDF file path
+    },
+    {
+        title: "Teacher Software",
+        paragraph: "Discover how to manage student grades, input results efficiently, and much more.",
+        cta1: "Teacher Login",
+        cta2: "Download Teacher Manual",
+        link1: "https://ekteacher.pbresultvault.com/",
+        link2: "/teacher-manual.pdf", // PDF file path
+    },
+    {
+        title: "Student Software",
+        paragraph: "Access your results, track academic progress, and understand how to use the portal.",
+        cta1: "Student Login",
+        cta2: "Download Student Manual",
+        link1: "https://ekstudents.pbresultvault.com/",
+        link2: "/student-manual.pdf", // PDF file path
+    },
+];
+
+const Benefits = () => {
+    const handleDownload = (fileUrl: string) => {
+        fetch(fileUrl) // Fetch the file from the public folder or external source
+            .then((response) => response.blob()) // Get the file as a Blob
+            .then((blob) => {
+                fileDownload(blob, fileUrl.split('/').pop() || 'download.pdf'); // Trigger download with file name
+            })
+            .catch((error) => console.error('Error downloading file:', error));
+    };
+
+    return (
+        <div className="bg-gray py-16 px-4 sm:px-6 lg:px-8" id='Benefits'>
+            <div className="max-w-7xl mx-auto">
+                <h2 className="text-6xl font-extrabold text-center text-black mb-12">
+                    Guides and Resources
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {cardData.map((card, i) => (
+                        <div key={i} className="bg-[#f3ebdd] rounded p-8 flex flex-col justify-between">
+                            <h3 className="text-lg font-bold text-black mb-4 text-left">{card.title}</h3>
+                            <p className="text-gray-600 mb-6 text-left">{card.paragraph}</p>
+
+                            {/* First CTA */}
+                            <Link href={card.link1} passHref legacyBehavior>
+                                <a className="text-white bg-[#00733d] transition-all text-center font-medium py-2 px-4 rounded block w-40">
+                                    {card.cta1}
+                                </a>
+                            </Link>
+
+                            {/* Second CTA (Download link) */}
+                            <button
+                                onClick={() => handleDownload(card.link2)}
+                                className="text-[#00733d] underline text-md font-medium mt-4 block text-left"
+                            >
+                                {card.cta2}
+                            </button>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Benefits;
