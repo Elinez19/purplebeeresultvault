@@ -1,4 +1,7 @@
-import { FaUserEdit, FaFileArchive, FaChartLine } from 'react-icons/fa';
+import { FaGraduationCap, FaChartLine } from "react-icons/fa6";
+import { BsFileEarmarkLock } from "react-icons/bs";
+
+
 import Link from 'next/link';
 
 interface DataType {
@@ -9,12 +12,12 @@ interface DataType {
 
 const aboutData: DataType[] = [
     {
-        icon: <FaUserEdit size={55} color="orange" />,
+        icon: <FaGraduationCap size={55} color="orange" />,
         heading: "Real-Time Results",
         paragraph: 'Schools upload and update results in real-time, allowing instant access to records.',
     },
     {
-        icon: <FaFileArchive size={55} color="orange" />,
+        icon: <BsFileEarmarkLock size={55} color="orange" />,
         heading: "Secure Data Storage",
         paragraph: 'All data is protected by state-of-the-art encryption, ensuring privacy and security.',
     },
