@@ -20,7 +20,7 @@ const Testimonial = () => {
       {/* Text Section */}
       <div className="lg:w-1/2 mt-6 lg:mt-0 text-center flex flex-col items-center">
         <p className="text-lg text-gray-700 italic max-w-xl">
-          “Digitalising the education sector empowers schools with tools to streamline processes, enhance transparency, and improve access to information. It fosters efficiency in managing academic records while enabling real-time insights, ultimately raising the quality of education and preparing students for a technology-driven future."
+          Digitalising the education sector empowers schools with tools to streamline processes, enhance transparency, and improve access to information. It fosters efficiency in managing academic records while enabling real-time insights, ultimately raising the quality of education and preparing students for a technology-driven future.
         </p>
         <p className="mt-4 text-sm text-gray-500">- Dr. (Mrs.) K. O. O. Aderiye</p>
       </div>
