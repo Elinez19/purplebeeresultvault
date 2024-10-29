@@ -50,7 +50,7 @@ const Benefits = () => {
     };
 
     return (
-        <div className="bg-gray py-16 px-4 sm:px-6 lg:px-8" id='Benefits'>
+        <div className="bg-gray py-16 px-4 sm:px-6 lg:px-8" id='Guides'>
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-6xl font-extrabold text-center text-black mb-12">
                     Guides and Resources

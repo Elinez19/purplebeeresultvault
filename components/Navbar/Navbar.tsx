@@ -15,15 +15,15 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
     { name: 'About Us', href: '/', current: true },
     { name: 'Features', href: '#Features', current: false },
-    { name: 'Benefits', href: '#Benefits', current: false },
-    { name: 'How it Works', href: '#HowItWorks', current: false },
+    { name: 'Guides', href: '#Guides', current: false },
+    { name: 'FAQs', href: '#FAQs', current: false },
 ];
 
 const drawerNavigation: NavigationItem[] = [
     { name: 'About Us', href: '/', current: true },
     { name: 'Features', href: '#Features', current: false },
-    { name: 'Benefits', href: '#Benefits', current: false },
-    { name: 'How it Works', href: '#HowItWorks', current: false },
+    { name: 'Guides', href: '#Guides', current: false },
+    { name: 'FAQs', href: '#FAQs', current: false },
 ];
 
 function classNames(...classes: string[]) {

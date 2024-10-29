@@ -147,7 +147,7 @@ const HowItWorks = () => {
   };
 
   return (
-    <div className="faq-section py-16 bg-gray-100" id='HowItWorks'>
+    <div className="faq-section py-16 bg-gray-100" id='FAQs'>
       <h2 className="faq-title text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
 
       <div className="faq-container max-w-3xl mx-auto">
