@@ -4,6 +4,7 @@ import WhoWeAre from '@/components/WhoWeAre';
 import Business from '@/components/Business';
 import Features from '@/components/Features';
 import Provide from '@/components/Provide';
+import Testimonial from '@/components/Why';
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
     <>
       <HomePage/>
       <WhoWeAre/>
+      <Testimonial/>
       <Business/>
       <Features/>
       <Provide/>
